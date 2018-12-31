@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>
+Displaying using Date Object
+</title>
+</head>
+<body>
+<script>
+var d = new Date(2005, 3, 4, 16, 7, 45,333);
+var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+//var d =new Date(year, month, day, hours, minutes, seconds, milliseconds)
+var months = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"];
+document.write(days[d.getDay()]+" ")
+document.write(months[d.getMonth()]+" ")
+document.write(d.getDate()+" ")
+document.write(d.getHours()+":")
+document.write(d.getMinutes()+":")
+document.write(d.getSeconds()+" ")
+document.write(d.getFullYear()+"<br>")
+if(d.getHours()<12)
+document.write("Good Morning")
+if(d.getHours()>=12&&d.getHours()<=17)
+document.write("Gud Afternoon")
+if(d.getHours()>17)
+document.write("Gud Evening")
+
+
+
+
+
+
+</script>
+</body>
+</html>

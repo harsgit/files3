@@ -1,0 +1,35 @@
+
+
+<html>
+<head>
+<title>
+Compound Interest
+</title>
+</head>
+<body>
+<pre>
+----------------------------------------------
+**********Calculate Compound Interest*********
+----------------------------------------------	
+	</pre>
+<script>
+var p=1000;
+var r=10;
+var n=1;
+function CompoundInterest(p,r,n)
+{
+var temp=parseFloat(1+parseFloat(r/100));
+var temp1=Math.pow(temp,n)*p;
+var CI=temp1-p;
+
+document.write( "Principal     -   "+window.p)
+ document.write( "<br> Rate of Interest    -   "+window.r)
+document.write( "<br>Period     -   "+window.n)
+document.write( " <br>Comp Interest 		-	 "+CI)
+
+}
+CompoundInterest(p,r,n);
+
+</script>
+
+</body></html>

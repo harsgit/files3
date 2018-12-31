@@ -1,0 +1,67 @@
+<html>
+<head> 
+
+<title>Create a table</title> 
+
+ 
+</head><body bgcolor="aqua"> 
+<h1>Products</h1>
+
+<table id="myTable" border="1"> 
+</table>
+  <table>
+  <form name="form1"> 
+  <tr>
+    <th>Name</th>
+    <th>Description</th> 
+    <th>Price</th>
+    <th>Qty</th>
+  </tr>
+  <tr>
+    <td>Barbie Doll</td>
+    <td>Beautiful</td> 
+    <td>20</td>
+    <td><input type="number" name="text1"></td>
+  </tr>
+  <tr>
+    <td>Calculator</td>
+    <td>Calculator with latest features</td> 
+    <td>30</td>
+    <td><input type="number" name="text2"></td>
+  </tr>
+    <tr>
+    <td>Mobile Phone</td>
+    <td>Camera,Java Games,GPRS</td> 
+    <td>40</td>
+    <td><input type="number" name="text3"></td>
+  </tr>
+    <tr>
+    <td>LG DVD</td>
+    <td>5 disc changer</td> 
+    <td>50</td>
+    <td><input type="number" name="text4"></td>
+  </tr>
+</table>
+<input type="button" onclick="createTable()" value="Order"> 
+</form>
+<script>
+function createTable()
+{
+var empt = document.forms["form1"]["text1"].value;
+var empt1 = document.forms["form1"]["text2"].value;
+var empt2 = document.forms["form1"]["text3"].value;
+var empt3 = document.forms["form1"]["text4"].value;
+if (empt == "")
+{
+alert("No Items Selected");
+return false;
+}
+else 
+{
+alert('Code has accepted : you can try another');
+alert(empt+empt1+empt2+empt3);
+return true; 
+}
+}
+</script>
+</body>

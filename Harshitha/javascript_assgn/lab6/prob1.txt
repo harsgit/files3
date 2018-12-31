@@ -1,0 +1,22 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var x = location.protocol;
+<table>
+
+<tr><th> <h1>
+Location Object Properties</h1>
+</th>
+</tr>
+<tr>
+<td>href</td>
+
+<td>document.write(x);
+</td>
+
+</table>
+</script>
+
+</body>

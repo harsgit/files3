@@ -1,0 +1,63 @@
+<html> 
+<head> 
+<title> window example </title> 
+</head> 
+<script> 
+ 
+ var width=Document.getElementById("width");
+ var height=Document.getElementById("height");
+ var left=Document.getElementById("left");
+ var top=Document.getElementById("top");
+ function nwindow()
+ {
+ 
+ var x=window.open("http://www.google.com/","myWindow","_blank");
+ x.document.write("this is  content in new window");
+
+ /*TODO: get the height, width, left and top from the form object and pass the values to open method of window 
+ along with the name of the html file to be opened in the new window.*/ 
+ }
+
+
+
+ </script>
+ <body > 
+ <form id="frmlab">
+ <table border="1" cellspacing="8" cellpadding="10" bordercolor="blue">
+ // Create Table as shown in fig 6.2 
+ <tr>
+ <th colspan="4"> Create a new window</th>
+ </tr>
+ <tr>
+ <td colspan="4" align ="center">Window size </td>
+ </tr>
+ <tr>
+ <td >width:</td>
+ <td><input id="width"></td>
+ <td>Height:</td>
+ <td><input id="height"></td>
+ </tr>
+ <tr>
+ <td colspan="4" align="center"> Position</td>
+ </tr>
+ <tr>
+ <td >left:</td>
+ <td><input id="left"></td>
+ <td>Top:</td>
+ <td><input id="top"></td>
+ </tr>
+ <tr>
+ <td colspan="3" align="center"><button onClick="nwindow()">New Window</button></td>
+  
+ 
+ <td align="center"><button onclick="reset()">Reset</button></td>
+ </tr>
+ 
+ 
+ </table> 
+ </form>
+ 
+
+
+ </body>
+ </html>
